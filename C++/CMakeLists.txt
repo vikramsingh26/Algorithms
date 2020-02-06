@@ -8,3 +8,5 @@ add_executable(Fibonnaci Fibonnaci.cpp)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 set(CXX_EXTENSIONS NO)
+
+target_compile_features(Fibonnaci PUBLIC cxx_std_11)
