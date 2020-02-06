@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named FibTest
+
+# Build rule for target.
+FibTest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 FibTest
+.PHONY : FibTest
+
+# fast build rule for target.
+FibTest/fast:
+	$(MAKE) -f CMakeFiles/FibTest.dir/build.make CMakeFiles/FibTest.dir/build
+.PHONY : FibTest/fast
+
+#=============================================================================
 # Target rules for targets named Fibonnaci
 
 # Build rule for target.
@@ -122,6 +135,33 @@ Fibonnaci: cmake_check_build_system
 Fibonnaci/fast:
 	$(MAKE) -f CMakeFiles/Fibonnaci.dir/build.make CMakeFiles/Fibonnaci.dir/build
 .PHONY : Fibonnaci/fast
+
+FibTest.o: FibTest.cpp.o
+
+.PHONY : FibTest.o
+
+# target to build an object file
+FibTest.cpp.o:
+	$(MAKE) -f CMakeFiles/FibTest.dir/build.make CMakeFiles/FibTest.dir/FibTest.cpp.o
+.PHONY : FibTest.cpp.o
+
+FibTest.i: FibTest.cpp.i
+
+.PHONY : FibTest.i
+
+# target to preprocess a source file
+FibTest.cpp.i:
+	$(MAKE) -f CMakeFiles/FibTest.dir/build.make CMakeFiles/FibTest.dir/FibTest.cpp.i
+.PHONY : FibTest.cpp.i
+
+FibTest.s: FibTest.cpp.s
+
+.PHONY : FibTest.s
+
+# target to generate assembly for a file
+FibTest.cpp.s:
+	$(MAKE) -f CMakeFiles/FibTest.dir/build.make CMakeFiles/FibTest.dir/FibTest.cpp.s
+.PHONY : FibTest.cpp.s
 
 Fibonnaci.o: Fibonnaci.cpp.o
 
@@ -150,6 +190,33 @@ Fibonnaci.cpp.s:
 	$(MAKE) -f CMakeFiles/Fibonnaci.dir/build.make CMakeFiles/Fibonnaci.dir/Fibonnaci.cpp.s
 .PHONY : Fibonnaci.cpp.s
 
+Fibonnaci_main.o: Fibonnaci_main.cpp.o
+
+.PHONY : Fibonnaci_main.o
+
+# target to build an object file
+Fibonnaci_main.cpp.o:
+	$(MAKE) -f CMakeFiles/Fibonnaci.dir/build.make CMakeFiles/Fibonnaci.dir/Fibonnaci_main.cpp.o
+.PHONY : Fibonnaci_main.cpp.o
+
+Fibonnaci_main.i: Fibonnaci_main.cpp.i
+
+.PHONY : Fibonnaci_main.i
+
+# target to preprocess a source file
+Fibonnaci_main.cpp.i:
+	$(MAKE) -f CMakeFiles/Fibonnaci.dir/build.make CMakeFiles/Fibonnaci.dir/Fibonnaci_main.cpp.i
+.PHONY : Fibonnaci_main.cpp.i
+
+Fibonnaci_main.s: Fibonnaci_main.cpp.s
+
+.PHONY : Fibonnaci_main.s
+
+# target to generate assembly for a file
+Fibonnaci_main.cpp.s:
+	$(MAKE) -f CMakeFiles/Fibonnaci.dir/build.make CMakeFiles/Fibonnaci.dir/Fibonnaci_main.cpp.s
+.PHONY : Fibonnaci_main.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -158,10 +225,17 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... FibTest"
 	@echo "... Fibonnaci"
+	@echo "... FibTest.o"
+	@echo "... FibTest.i"
+	@echo "... FibTest.s"
 	@echo "... Fibonnaci.o"
 	@echo "... Fibonnaci.i"
 	@echo "... Fibonnaci.s"
+	@echo "... Fibonnaci_main.o"
+	@echo "... Fibonnaci_main.i"
+	@echo "... Fibonnaci_main.s"
 .PHONY : help
 
 
