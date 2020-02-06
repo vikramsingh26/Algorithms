@@ -2,9 +2,9 @@ cmake_minimum_required(VERSION 2.6)
 
 project(Algorithm)
 
-add_executable(Fibonnaci 
-                Fibonnaci.cpp
-                Fibonnaci_main.cpp)
+add_executable(Fibonacci 
+                Fibonacci.cpp
+                Fibonacci_main.cpp)
                 
 add_executable(FibTest FibTest.cpp)
 
@@ -12,7 +12,7 @@ add_executable(FibTest FibTest.cpp)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 set(CXX_EXTENSIONS NO)
-target_compile_features(Fibonnaci PUBLIC cxx_std_11)
+target_compile_features(Fibonacci PUBLIC cxx_std_11)
 
 # FibTest
 

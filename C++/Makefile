@@ -124,17 +124,17 @@ FibTest/fast:
 .PHONY : FibTest/fast
 
 #=============================================================================
-# Target rules for targets named Fibonnaci
+# Target rules for targets named Fibonacci
 
 # Build rule for target.
-Fibonnaci: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Fibonnaci
-.PHONY : Fibonnaci
+Fibonacci: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Fibonacci
+.PHONY : Fibonacci
 
 # fast build rule for target.
-Fibonnaci/fast:
-	$(MAKE) -f CMakeFiles/Fibonnaci.dir/build.make CMakeFiles/Fibonnaci.dir/build
-.PHONY : Fibonnaci/fast
+Fibonacci/fast:
+	$(MAKE) -f CMakeFiles/Fibonacci.dir/build.make CMakeFiles/Fibonacci.dir/build
+.PHONY : Fibonacci/fast
 
 FibTest.o: FibTest.cpp.o
 
@@ -163,59 +163,59 @@ FibTest.cpp.s:
 	$(MAKE) -f CMakeFiles/FibTest.dir/build.make CMakeFiles/FibTest.dir/FibTest.cpp.s
 .PHONY : FibTest.cpp.s
 
-Fibonnaci.o: Fibonnaci.cpp.o
+Fibonacci.o: Fibonacci.cpp.o
 
-.PHONY : Fibonnaci.o
-
-# target to build an object file
-Fibonnaci.cpp.o:
-	$(MAKE) -f CMakeFiles/Fibonnaci.dir/build.make CMakeFiles/Fibonnaci.dir/Fibonnaci.cpp.o
-.PHONY : Fibonnaci.cpp.o
-
-Fibonnaci.i: Fibonnaci.cpp.i
-
-.PHONY : Fibonnaci.i
-
-# target to preprocess a source file
-Fibonnaci.cpp.i:
-	$(MAKE) -f CMakeFiles/Fibonnaci.dir/build.make CMakeFiles/Fibonnaci.dir/Fibonnaci.cpp.i
-.PHONY : Fibonnaci.cpp.i
-
-Fibonnaci.s: Fibonnaci.cpp.s
-
-.PHONY : Fibonnaci.s
-
-# target to generate assembly for a file
-Fibonnaci.cpp.s:
-	$(MAKE) -f CMakeFiles/Fibonnaci.dir/build.make CMakeFiles/Fibonnaci.dir/Fibonnaci.cpp.s
-.PHONY : Fibonnaci.cpp.s
-
-Fibonnaci_main.o: Fibonnaci_main.cpp.o
-
-.PHONY : Fibonnaci_main.o
+.PHONY : Fibonacci.o
 
 # target to build an object file
-Fibonnaci_main.cpp.o:
-	$(MAKE) -f CMakeFiles/Fibonnaci.dir/build.make CMakeFiles/Fibonnaci.dir/Fibonnaci_main.cpp.o
-.PHONY : Fibonnaci_main.cpp.o
+Fibonacci.cpp.o:
+	$(MAKE) -f CMakeFiles/Fibonacci.dir/build.make CMakeFiles/Fibonacci.dir/Fibonacci.cpp.o
+.PHONY : Fibonacci.cpp.o
 
-Fibonnaci_main.i: Fibonnaci_main.cpp.i
+Fibonacci.i: Fibonacci.cpp.i
 
-.PHONY : Fibonnaci_main.i
+.PHONY : Fibonacci.i
 
 # target to preprocess a source file
-Fibonnaci_main.cpp.i:
-	$(MAKE) -f CMakeFiles/Fibonnaci.dir/build.make CMakeFiles/Fibonnaci.dir/Fibonnaci_main.cpp.i
-.PHONY : Fibonnaci_main.cpp.i
+Fibonacci.cpp.i:
+	$(MAKE) -f CMakeFiles/Fibonacci.dir/build.make CMakeFiles/Fibonacci.dir/Fibonacci.cpp.i
+.PHONY : Fibonacci.cpp.i
 
-Fibonnaci_main.s: Fibonnaci_main.cpp.s
+Fibonacci.s: Fibonacci.cpp.s
 
-.PHONY : Fibonnaci_main.s
+.PHONY : Fibonacci.s
 
 # target to generate assembly for a file
-Fibonnaci_main.cpp.s:
-	$(MAKE) -f CMakeFiles/Fibonnaci.dir/build.make CMakeFiles/Fibonnaci.dir/Fibonnaci_main.cpp.s
-.PHONY : Fibonnaci_main.cpp.s
+Fibonacci.cpp.s:
+	$(MAKE) -f CMakeFiles/Fibonacci.dir/build.make CMakeFiles/Fibonacci.dir/Fibonacci.cpp.s
+.PHONY : Fibonacci.cpp.s
+
+Fibonacci_main.o: Fibonacci_main.cpp.o
+
+.PHONY : Fibonacci_main.o
+
+# target to build an object file
+Fibonacci_main.cpp.o:
+	$(MAKE) -f CMakeFiles/Fibonacci.dir/build.make CMakeFiles/Fibonacci.dir/Fibonacci_main.cpp.o
+.PHONY : Fibonacci_main.cpp.o
+
+Fibonacci_main.i: Fibonacci_main.cpp.i
+
+.PHONY : Fibonacci_main.i
+
+# target to preprocess a source file
+Fibonacci_main.cpp.i:
+	$(MAKE) -f CMakeFiles/Fibonacci.dir/build.make CMakeFiles/Fibonacci.dir/Fibonacci_main.cpp.i
+.PHONY : Fibonacci_main.cpp.i
+
+Fibonacci_main.s: Fibonacci_main.cpp.s
+
+.PHONY : Fibonacci_main.s
+
+# target to generate assembly for a file
+Fibonacci_main.cpp.s:
+	$(MAKE) -f CMakeFiles/Fibonacci.dir/build.make CMakeFiles/Fibonacci.dir/Fibonacci_main.cpp.s
+.PHONY : Fibonacci_main.cpp.s
 
 # Help Target
 help:
@@ -226,16 +226,16 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... FibTest"
-	@echo "... Fibonnaci"
+	@echo "... Fibonacci"
 	@echo "... FibTest.o"
 	@echo "... FibTest.i"
 	@echo "... FibTest.s"
-	@echo "... Fibonnaci.o"
-	@echo "... Fibonnaci.i"
-	@echo "... Fibonnaci.s"
-	@echo "... Fibonnaci_main.o"
-	@echo "... Fibonnaci_main.i"
-	@echo "... Fibonnaci_main.s"
+	@echo "... Fibonacci.o"
+	@echo "... Fibonacci.i"
+	@echo "... Fibonacci.s"
+	@echo "... Fibonacci_main.o"
+	@echo "... Fibonacci_main.i"
+	@echo "... Fibonacci_main.s"
 .PHONY : help
 
 

@@ -1,6 +1,6 @@
 //
-//  Fibonnaci.cpp
-//  Fibonnaci
+//  Fibonacci.cpp
+//  Fibonacci
 //
 //  Created by Vikram Singh on 2/5/20.
 //  Copyright © 2020 Vikram Singh. All rights reserved.
@@ -10,7 +10,7 @@
 #include <string>
 #include <sstream>
 #include <map>
-#include "Fibonnaci.h"
+#include "Fibonacci.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -31,12 +31,12 @@ int main(int argc, const char * argv[]) {
         
         auto start = std::chrono::system_clock::now();
 
-        auto result =  fibonnaci_version1(number);
+        auto result =  Fibonacci_version1(number);
         std::chrono::duration<double> time_took = std::chrono::system_clock::now() - start; 
         cout << "Result = " << result << "\nTime Took by Version1 = " << std::chrono::duration_cast<std::chrono::milliseconds>(time_took).count() << " milliseconds"<< endl;
         start = std::chrono::system_clock::now();
 
-        result = fibonnaci_version2(number);
+        result = Fibonacci_version2(number);
         time_took = std::chrono::system_clock::now() - start;
         cout << "Result = " << result << "\nTime Took by Version2 = " << chrono::duration_cast<chrono::milliseconds>(time_took).count() << " milliseconds"<< endl;
         

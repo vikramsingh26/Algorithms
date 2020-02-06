@@ -11,29 +11,29 @@
 #include<iostream>
 #include<gtest/gtest.h>
 #include<math.h>
-#include"Fibonnaci.cpp"
+#include"Fibonacci.cpp"
 
-TEST(FibTest, Fibonnaci_V2_1)
+TEST(FibTest, Fibonacci_V2_1)
 {
-    ASSERT_EQ(0+1, fibonnaci_version2(1));
+    ASSERT_EQ(0+1, Fibonacci_version2(1));
 }
-TEST(FibTest, Fibonnaci_V2_2)
+TEST(FibTest, Fibonacci_V2_2)
 {
-    ASSERT_EQ(0+1, fibonnaci_version2(2));
+    ASSERT_EQ(0+1, Fibonacci_version2(2));
 }
-TEST(FibTest, Fibonnaci_V2_3)
+TEST(FibTest, Fibonacci_V2_3)
 {
-    ASSERT_EQ(1+1, fibonnaci_version2(3));
+    ASSERT_EQ(1+1, Fibonacci_version2(3));
 }
-TEST(FibTest, Fibonnaci_V2_4)
+TEST(FibTest, Fibonacci_V2_4)
 {
-    ASSERT_EQ(1+2, fibonnaci_version2(4));
+    ASSERT_EQ(1+2, Fibonacci_version2(4));
 }
-TEST(FibTest, Fibonnaci_V2_5)
+TEST(FibTest, Fibonacci_V2_5)
 {
-    ASSERT_EQ(5, fibonnaci_version2(5));
+    ASSERT_EQ(5, Fibonacci_version2(5));
 }
-TEST(FibTest, Fibonnaci_V2_50)
+TEST(FibTest, Fibonacci_V2_50)
 {
-    ASSERT_EQ(12586269025, fibonnaci_version2(50));
+    ASSERT_EQ(12586269025, Fibonacci_version2(50));
 }
