@@ -14,11 +14,10 @@
 using namespace std;
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-   
+
     do {
         int number ;
-        //g_map.clear();
+        clear();
         cout << "enter the number to calculate fibannaci or type q for quitting\n";
         cin >> number;
         if(cin.fail())

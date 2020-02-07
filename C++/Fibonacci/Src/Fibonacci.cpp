@@ -24,6 +24,12 @@ double Fibonacci_version1(int number)
 }
 
 map<int, double> g_map;
+
+void clear()
+{
+    g_map.clear();
+}
+
 double Fibonacci_version2(int number)
 {
     // Time complexity =  O(n)
