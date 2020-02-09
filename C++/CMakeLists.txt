@@ -4,4 +4,5 @@ project(Algorithms)
 
 add_subdirectory(Fibonacci)
 add_subdirectory(LC1295)
+add_subdirectory(LC1296)
 

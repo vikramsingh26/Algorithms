@@ -13,21 +13,21 @@
 #include<math.h>
 #include<Solution.h>
 
-TEST(FibTest, Solution_Test1)
+TEST(LC1295SolutionTest, Solution_Test1)
 {
     vector<int> v{12,345,2,6,7896};
     Solution sol;
     ASSERT_EQ(2, sol.findeNumbers(v));
 }
 
-TEST(FibTest, Solution_Test2)
+TEST(LC1295SolutionTest, Solution_Test2)
 {
     vector<int> v{12,345,2,6,7896,78};
     Solution sol;
     ASSERT_EQ(3, sol.findeNumbers(v));
 }
 
-TEST(FibTest, Solution_Test3)
+TEST(LC1295SolutionTest, Solution_Test3)
 {
     vector<int> v{1,345,2,6,7896};
     Solution sol;
