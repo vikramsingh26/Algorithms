@@ -9,8 +9,7 @@ set(CXX_EXTENSIONS NO)
 
 # include directories.
 
-include_directories(${Algorithms_SOURCE_DIR}/Fibonacci/Include)
-include_directories(${Algorithms_SOURCE_DIR}/Fibonacci/Src)
+
 include_directories("/usr/local/include")
 
 #Link directories list.
