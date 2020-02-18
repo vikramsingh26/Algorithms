@@ -57,20 +57,48 @@ class Solution{
 
             // Copy each element to Multiset.
             multiset<int> mset;
+            multiset<int> ms;
+            ms.insert(4);
+            ms.insert(2);
+            ms.insert(2);
+            ms.insert(3);
+            
+
+            for (auto it=ms.begin(); it!=ms.end(); ++it)
+                    std::cout << ' ' << *it;
+            cout << endl;
+            auto it = ms.find(2);
+            ms.erase(it);
+
+            for (auto it=ms.begin(); it!=ms.end(); ++it)
+                    std::cout << ' ' << *it;
+            cout << endl;
             for (auto& n : nums)
             {
+                cout << " " << n ;
                 mset.insert(n);
             }
+           
+             cout << endl;
+            for (auto it=mset.begin(); it!=mset.end(); ++it)
+                    std::cout << ' ' << *it;
 
             //
             while(not mset.empty())
             {
                 int start_val = *mset.begin();
+                cout << "\nstart_val=" << start_val << endl;
+                cout << "mset size=" << mset.size() << endl ;
                 for(int i=0; i<k; i++)
                 {
                     if(mset.empty())
                         return false;
                     auto ith_val = mset.find(start_val+i);
+                    //cout << "start_val=" << start_val << endl;
+                    //cout << "mset size=" << mset.size() << endl ;
+                    for (auto it=mset.begin(); it!=mset.end(); ++it)
+                        std::cout << ' ' << *it;
+                    cout << " before erase - ith " << i << " val=" << *ith_val << endl;
                     if( ith_val !=mset.end())
                     {
                         mset.erase(ith_val);

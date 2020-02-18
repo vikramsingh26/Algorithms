@@ -1,9 +1,9 @@
 
-set(EXEC_NAME LC1295SolutionTest)
+set(EXEC_NAME TemplateTest)
 
 include(${Algorithms_SOURCE_DIR}/includes.cmake)
                 
-add_executable(${EXEC_NAME} LC1295SolutionTest.cpp)
+add_executable(${EXEC_NAME} TemplateTest.cpp)
 
 include_directories(${Algorithms_SOURCE_DIR}/LC1295/Include)
 

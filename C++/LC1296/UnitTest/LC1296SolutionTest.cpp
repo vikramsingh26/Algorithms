@@ -15,7 +15,7 @@
 
 TEST(LC1296SolutionTest, Solution_Test1)
 {
-    vector<int> v{1,2,3,3,4,4,5,6};
+    vector<int> v{6,2,3,3,4,4,5,1};
     Solution sol;
     ASSERT_EQ(true, sol.isPossibleDivide(v, 4));
 }
@@ -32,5 +32,4 @@ TEST(LC1296SolutionTest, Solution_Test3)
     vector<int> v{1,2,3,4} ;
     Solution sol;
     ASSERT_EQ(false,sol.isPossibleDivide(v,3));
-    
 }
