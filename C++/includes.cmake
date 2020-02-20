@@ -6,6 +6,8 @@ set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 set(CXX_EXTENSIONS NO)
 
+add_compile_options(-pthread)
+find_package(Threads REQUIRED)
 
 # include directories.
 
@@ -18,4 +20,4 @@ link_directories("/usr/local/lib")
 
 #install directories
 
-set(CMAKE_INSTALL_PREFIX ${Algorithms_SOURCE_DIR}/build/bin)    
+set(CMAKE_INSTALL_PREFIX ${Algorithms_SOURCE_DIR}/build/bin)

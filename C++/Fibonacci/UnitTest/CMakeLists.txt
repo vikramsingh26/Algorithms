@@ -5,6 +5,7 @@ add_executable(FibTest FibTest.cpp)
 
 
 target_link_libraries(FibTest
+		      Threads::Threads
                       gtest
                       gmock
                       gtest_main )

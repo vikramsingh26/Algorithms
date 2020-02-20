@@ -8,6 +8,7 @@ add_executable(${EXEC_NAME} LC1296SolutionTest.cpp)
 include_directories(${Algorithms_SOURCE_DIR}/LC1296/Include)
 
 target_link_libraries(${EXEC_NAME}
+		      Threads::Threads
                       gtest
                       gmock
                       gtest_main )
