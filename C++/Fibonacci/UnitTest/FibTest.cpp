@@ -11,7 +11,7 @@
 #include<iostream>
 #include<gtest/gtest.h>
 #include<math.h>
-#include<Fibonaccii.cpp>
+#include<Fibonacci.cpp>
 
 TEST(FibTest, Fibonacci_V2_1)
 {
