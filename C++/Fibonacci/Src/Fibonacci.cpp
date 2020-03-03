@@ -48,3 +48,23 @@ double Fibonacci_version2(int number)
 
     return g_map[number];
 }
+
+/// Dynamic Programming-
+
+double Fibonacci_version3(int number)
+{
+    // Time complexity =  O(n)
+    // Space Complexity = O(n)
+    if(number == 0)
+        return 0;
+    if(number == 1)
+        return 1;
+    g_map[0] = 0;
+    g_map[1] = 1;
+    for(auto n=2; n<=number; n++)
+    {
+        g_map[number] = g_map[n-1] + g_map[n-2];
+    }
+
+    return g_map[number];
+}

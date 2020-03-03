@@ -30,15 +30,19 @@ int main(int argc, const char * argv[]) {
         cout << "Number = " << number << endl;
         
         auto start = std::chrono::system_clock::now();
-
         auto result =  Fibonacci_version1(number);
         std::chrono::duration<double> time_took = std::chrono::system_clock::now() - start; 
         cout << "Result = " << result << "\nTime Took by Version1 = " << std::chrono::duration_cast<std::chrono::milliseconds>(time_took).count() << " milliseconds"<< endl;
+        
         start = std::chrono::system_clock::now();
-
         result = Fibonacci_version2(number);
         time_took = std::chrono::system_clock::now() - start;
-        cout << "Result = " << result << "\nTime Took by Version2 = " << chrono::duration_cast<chrono::milliseconds>(time_took).count() << " milliseconds"<< endl;
+        cout << "Result = " << result << "\nTime Took by Version2 = " << chrono::duration_cast<chrono::microseconds>(time_took).count() << " microseconds"<< endl;
+        clear();
+        start = std::chrono::system_clock::now();
+        result = Fibonacci_version3(number);
+        time_took = std::chrono::system_clock::now() - start;
+        cout << "Result = " << result << "\nTime Took by Version3 = " << chrono::duration_cast<chrono::microseconds>(time_took).count() << " microseconds"<< endl;
         
     }
     while(true);

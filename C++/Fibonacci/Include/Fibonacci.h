@@ -14,6 +14,7 @@ using namespace std;
 
 double Fibonacci_version1(int number);
 double Fibonacci_version2(int number);
+double Fibonacci_version3(int number);
 void clear();
 
 //map<int, double> g_map;
