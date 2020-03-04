@@ -21,3 +21,4 @@ link_directories("/usr/local/lib")
 #install directories
 
 set(CMAKE_INSTALL_PREFIX ${Algorithms_SOURCE_DIR}/build/bin)
+set(CMAKE_TEST_INSTALL_PREFIX ${Algorithms_SOURCE_DIR}/build/test)
