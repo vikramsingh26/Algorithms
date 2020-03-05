@@ -14,7 +14,7 @@ using namespace std;
 class LIS{
     
     public:
-        int getLongestIncreasingSequence(std::vector<int>);
+        int getLongestIncreasingSequence(const std::vector<int>& v);
     
 
 };

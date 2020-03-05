@@ -1,6 +1,6 @@
 include(${Algorithms_SOURCE_DIR}/includes.cmake)
 
-set(EXEC_NAME LongestIncreasingSubsequence)
+set(EXEC_NAME LIS)
 
 set(LIS_SRCS
     main.cpp

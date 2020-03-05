@@ -14,4 +14,4 @@ target_link_libraries(${EXEC_NAME}
                       gtest_main )
 
 
-install (TARGETS ${EXEC_NAME} DESTINATION ${CMAKE_INSTALL_PREFIX})
+install (TARGETS ${EXEC_NAME} DESTINATION ${CMAKE_TEST_INSTALL_PREFIX})

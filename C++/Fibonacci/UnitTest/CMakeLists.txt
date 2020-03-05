@@ -11,4 +11,4 @@ target_link_libraries(FibTest
                       gtest_main )
 
 
-install (TARGETS FibTest DESTINATION ${CMAKE_INSTALL_PREFIX})
+install (TARGETS FibTest DESTINATION ${CMAKE_TEST_INSTALL_PREFIX})
