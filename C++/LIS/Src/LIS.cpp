@@ -25,7 +25,7 @@ int LIS::getLongestIncreasingSequence(const std::vector<int>& input)
         L[i] = 1;
         for(int j=0; j<i; j++)
         {
-            if((input[j] < input[i]) & 
+            if((input[j] < input[i]) and
                 (L[i] < 1+L[j]))
             {
                 L[i] = 1 + L[j];
@@ -34,6 +34,30 @@ int LIS::getLongestIncreasingSequence(const std::vector<int>& input)
     }
  
 //std::cout << "emax_pos=" << max_pos << "\n";
+    return *max_element(L.begin(), L.end());
+
+}
+
+int LIS::getLongestDecreasingSequence(const std::vector<int>& input)
+{
+    //std::cout << "yyy\n";
+    if(input.empty())
+        return 0;
+
+    std::vector<int> L(input.size());
+    for(int i=0; i<input.size(); i++)
+    {
+        L[i] = 1;
+        for(int j=0; j<i; j++)
+        {
+            if((input[j] > input[i]) and
+                (L[i] < 1+L[j]))
+            {
+                L[i] = 1 + L[j];
+            }
+        }
+    }
+ 
     return *max_element(L.begin(), L.end());
 
 }

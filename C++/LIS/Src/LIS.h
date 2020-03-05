@@ -15,6 +15,7 @@ class LIS{
     
     public:
         int getLongestIncreasingSequence(const std::vector<int>& v);
+        int getLongestDecreasingSequence(const std::vector<int>& v);
     
 
 };

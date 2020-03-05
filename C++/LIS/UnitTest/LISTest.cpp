@@ -73,3 +73,17 @@ TEST(LISTest, LIS_Test8)
     ASSERT_EQ(6, obj.getLongestIncreasingSequence(vec));
 }
 
+TEST(LISTest, LIS_Test9)
+{
+    LIS obj;
+    auto vec = {10,9,8,7,6,5,4,3,2,1};
+    ASSERT_EQ(10, obj.getLongestDecreasingSequence(vec));
+
+    vec = {10,9,8,7,6,11,5,4,3,2,12};
+    ASSERT_EQ(9, obj.getLongestDecreasingSequence(vec));
+
+    vec = {1,2,3,4};
+    ASSERT_EQ(1, obj.getLongestDecreasingSequence(vec));
+    vec = {1,2,3,4,3,2,5};
+    ASSERT_EQ(3, obj.getLongestDecreasingSequence(vec));
+}
