@@ -15,5 +15,19 @@
 
 TEST(LISTest, LIS_Test1)
 {
-    
+    LIS obj;
+    std::vector<int> vec = {5,7,4,-3,9,1,10,4,5,8,9,3};
+    ASSERT_EQ(5, obj.getLongestIncreasingSequence(vec));
+    //vec = {5,7};
+    //ASSERT_EQ(2, obj.getLongestIncreasingSequence(vec));
+}
+
+
+TEST(LISTest, LIS_Test2)
+{
+    LIS obj;
+    //std::vector<int> vec = {5,7,4,-3,9,1,10,4,5,8,9,3};
+    //ASSERT_EQ(5, obj.getLongestIncreasingSequence(vec));
+    auto vec = {5,7};
+    ASSERT_EQ(2, obj.getLongestIncreasingSequence(vec));
 }
