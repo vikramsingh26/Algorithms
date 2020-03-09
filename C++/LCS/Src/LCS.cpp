@@ -25,7 +25,7 @@ int LCS::getLongestCommonSequence(const std::vector<string>& in1, const std::vec
         {
             if(in1[i-1] == in2[j-1])
             {
-                length[i][j] = 1+ length[i-1][j-1];
+                length[i][j] = 1 + length[i-1][j-1];
             }
             else
             {
