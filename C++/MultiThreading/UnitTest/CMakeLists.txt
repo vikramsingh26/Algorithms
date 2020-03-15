@@ -1,5 +1,5 @@
 
-set(EXEC_NAME test_LCS)
+set(EXEC_NAME test_Multithreading)
 
 include(${Algorithms_SOURCE_DIR}/includes.cmake)
 

@@ -2,7 +2,7 @@
 //  MultiThreading.cpp
 //  MultiThreading
 //
-//  Created by Vikram Singh on 2/5/20.
+//  Created by Vikram Singh on 3/11/2020.
 //  Copyright © 2020 Vikram Singh. All rights reserved.
 //
 
@@ -22,7 +22,7 @@ int main(int argc, const char * argv[]) {
     std::cout << "Hello from MultiThreading" << endl;
     thread th1(g_func, 10);
     th1.join();
-    //MultiThreading obj;
+
     thread th2(&MultiThreading::threadfunc, 20);
     th2.join();
 
@@ -31,9 +31,5 @@ int main(int argc, const char * argv[]) {
     };
     thread th3(f, 40);
     th3.join();
-
-    std::vector<string> vec {"B", "A", "B", "C", "B"};
-    std::vector<string> vec2 = {"A", "B", "C", "D", "B"};
-    //std::cout << obj.getLongestCommonSequence(vec, vec2);
     
 }

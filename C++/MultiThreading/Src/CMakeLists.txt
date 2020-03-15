@@ -10,5 +10,9 @@ set(MultiThreading_SRCS
 add_executable(${EXEC_NAME}
                 ${MultiThreading_SRCS})
 
+target_link_libraries(${EXEC_NAME}
+		      Threads::Threads
+             )
+
 
 install (TARGETS ${EXEC_NAME} DESTINATION ${CMAKE_INSTALL_PREFIX})
