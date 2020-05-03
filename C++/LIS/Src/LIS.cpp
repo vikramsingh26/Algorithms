@@ -13,6 +13,9 @@
 #include "LIS.h"
 using namespace std;
 
+// Ex- {5,7,4,-3,9,1,10,1,4,5,8,9,3}
+// LIS= {-3,1,4,5,8,9} length=6
+
 int LIS::getLongestIncreasingSequence(const std::vector<int>& input)
 {
     //std::cout << "yyy\n";
